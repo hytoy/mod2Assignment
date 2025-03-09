@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            width:100%;
+            padding: 10px;
+        }
+        .box{
+            width:100%;
+            height:150px;
+            border: 1px solid black;
+            background-color: aqua;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .title{
+            position: absolute;
+            top:0;
+            right: 0;
+            background-color: gray;
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        .content{
+            margin-top: 40px;
+        }
+        @media (min-width:992px){
+            .one{
+                width:32%;
+                float: left;
+                margin-right: 1%;
+            }
+            .two{
+                width:32%;
+                float: left;
+                margin-right: 1%;
+            }
+            .three{
+                width:33%;
+                float:left;
+                margin-right: 1%;
+            }
+        }
+        @media (min-width:768px) and (max-width:991px){
+            .one{
+                width:48%;
+                float: left;
+                margin-right: 2%;
+            }
+            .two{
+                width:48%;
+                float: left;
+                margin-right: 2%;
+            }
+            .three{
+                width:98%;
+                float:left;
+                margin-right: 2%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Menu</h1>
+        <div class="one box">
+            <div class="title"title>Chicken</div>
+            <p class="content">All the foods related to Chicken</p>
+        </div>
+        <div class="two box">
+            <div class="title"title>Mutton</div>
+            <p class="content">All the foods related to Mutton</p>
+        </div>
+        <div class="three box">
+            <div class="title"title>Fish</div>
+            <p class="content">All the foods related to Fish</p>
+        </div>
+    </body>
+</html>
